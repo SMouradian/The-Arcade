@@ -1,5 +1,5 @@
 # Website_Source-Code
-    Source code for video game review website. Constructed on August 29, 2024 for further customization of initial website concept.
+    Source code for video game review website. Constructed for further customization of the Jimdo website.
 
 ## TO DO
     1. Continue learning HTML code.
