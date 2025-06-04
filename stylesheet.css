@@ -1,0 +1,9 @@
+@font-face{
+    font-family: Crackman;
+    src: url("../The-Arcade/fonts/Crackman.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: Crackman;
+}
