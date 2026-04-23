@@ -11,14 +11,12 @@
         </ul><br><br>
 </div>
 
-<div style = "font-size: 18px;">
+<div>
 <i>
-Heyo, everybody!
-
+Heyo, everybody!<br>
 I have certainly come a long way in developing this hobby of mine; to think that the initial Instagram page that started it all began in 2019, and it has led to this! There was a stint that started in 2021 where I moved the blog to JIMDO, an online website builder, and I built my audience there. Now, however, I am happy to reveal this webpage as the next evolution in my game review blog. I hope that you all continue to enjoy the work I put out, and welcome to all you newcomers!
 
-Best,
-
+Best,<br>
 ZlinkPlays
 </i><br><br>
 </div>
