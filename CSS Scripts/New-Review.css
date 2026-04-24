@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Crackman';
-    src: url("/fonts/Crackman.ttf") format('truetype');
+    src: url("../fonts/Crackman.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BoldPixles';
-    src: url("/fonts/BoldPixels.ttf") format('truetype');
+    src: url("../fonts/BoldPixels.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
