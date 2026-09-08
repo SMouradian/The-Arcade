@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Arcade';
+    src: url("../fonts/ARCADE_I.TTF") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*
     These are design functions for the standard text on the webpage.
@@ -21,7 +28,7 @@
 body {
     min-height: 100vh;
     margin: 0px;
-    background: linear-gradient(to bottom, #005300 25%, #FFFFFF)
+    background: linear-gradient(to bottom, #1175b8 25%, #c4c4c4)
 }
 
 div{
@@ -42,14 +49,12 @@ div{
     align-items: center;
 }
 
-h1{
+.header1{
     font-family: 'Crackman';
-    color: #ffffff;
-}
-
-.header {
-    background-color: #005300;
-    padding: 50px;
+    font-size: 50px;
+    color: #fbff00;
+    padding-top: 35px;
+    padding-bottom: 25px;
 }
 
 
@@ -94,5 +99,228 @@ h1{
 
 .button:hover {
     background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/*
+    These are the design functions for the About Me's
+    "Text & Image" grid. This will provide parameters for
+    text and image boxes, text fonts, and font color designs.
+*/
+#AM-Grid {
+    max-width: 900px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    column-gap: 50px;
+    align-items: start;
+}
+
+.header2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: start;
+
+    font-family: 'Arcade';
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+
+    background: linear-gradient(175deg, #1eff00ab, hsla(261, 100%, 66%, 0.678));
+    border-radius: 50px;
+    outline-style: dashed;
+    outline-width: 5px;
+    outline-color: #ff0000a9;
+    width: 500px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.AM-Welcome-Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+
+    width: 500px;
+    padding: 20px;
+
+    background: #00000080;
+    border-radius: 50px;
+    outline-style: dashed;
+    outline-width: 5px;
+    outline-color: #ff0000a9;
+    box-sizing: border-box;
+}
+
+.coin-container {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+}
+
+.coin-mask {
+    --coin-size: 200px;
+    --coin-image-x: 50%;
+    --coin-image-y: 50%;
+    --coin-image-scale: 1;
+
+    width: var(--coin-size);
+    aspect-ratio: 1 / 1;
+    position: relative;
+    flex-shrink: 0;
+
+    background: #ffd900;
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        75% 4%,
+        88% 4%,
+        88% 10%,
+        94% 10%,
+        94% 18%,
+        98% 18%,
+        98% 25%,
+        100% 25%,
+        100% 75%,
+        98% 75%,
+        98% 82%,
+        94% 82%,
+        94% 90%,
+        88% 90%,
+        88% 96%,
+        75% 96%,
+        75% 100%,
+        25% 100%,
+        25% 96%,
+        12% 96%,
+        12% 90%,
+        6% 90%,
+        6% 82%,
+        2% 82%,
+        2% 75%,
+        0% 75%,
+        0% 25%,
+        2% 25%,
+        2% 18%,
+        6% 18%,
+        6% 10%,
+        12% 10%,
+        12% 4%,
+        25% 4%
+    );
+    box-shadow:
+        0 0 0 4px #ffef4a,
+        6px 6px 0 #8a6500;
+}
+
+.coin-mask img {
+    position: absolute;
+    width: 88%;
+    height: 88%;
+    left: 6%;
+    top: 6%;
+
+    object-fit: cover;
+    object-position: var(--coin-image-x) var(--coin-image-y);
+    transform: scale(var(--coin-image-scale));
+    transform-origin: center;
+
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        75% 4%,
+        88% 4%,
+        88% 10%,
+        94% 10%,
+        94% 18%,
+        98% 18%,
+        98% 25%,
+        100% 25%,
+        100% 75%,
+        98% 75%,
+        98% 82%,
+        94% 82%,
+        94% 90%,
+        88% 90%,
+        88% 96%,
+        75% 96%,
+        75% 100%,
+        25% 100%,
+        25% 96%,
+        12% 96%,
+        12% 90%,
+        6% 90%,
+        6% 82%,
+        2% 82%,
+        2% 75%,
+        0% 75%,
+        0% 25%,
+        2% 25%,
+        2% 18%,
+        6% 18%,
+        6% 10%,
+        12% 10%,
+        12% 4%,
+        25% 4%
+    );
+}
+
+.coin-1 {
+    transform: translateX(-50px);
+}
+
+.coin-2 {
+    transform: translateX(+200px);
+}
+
+.coin-3 {
+    transform: translateX(-50px);
+}
+
+
+/*
+    These are the design functions for the About Me's contact
+    information bar located at the bottom of the page.
+*/
+#Socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 40px;
+}
+
+.social-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000000;
+    padding: 8px 15px;
+    border-radius: 50px;
+    gap: 5px;
+}
+
+.social-button {
+    color: #ffffff;
+    font-family: 'BoldPixles';
+    font-size: 18px;
+    text-decoration: underline;
+
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.social-button:hover {
+    background-color: #ffffff;
     color: #000000;
 }

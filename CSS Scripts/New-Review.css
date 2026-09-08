@@ -44,12 +44,13 @@ div{
 
 h1{
     font-family: 'Crackman';
+    font-size: 50px;
     color: #ffffff;
 }
 
 .header {
     background-color: #005300;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 
